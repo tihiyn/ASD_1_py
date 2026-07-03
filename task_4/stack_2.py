@@ -12,17 +12,11 @@ class StackReverse:
     def size(self):
         return len(self.stack)
     
-    """
-    Временная сложность - O(N)
-    """
     def pop(self) -> Any:
         if self.size() == 0:
             return None
         return self.stack.pop(0)
 
-    """
-    Временная сложность - O(N)
-    """
     def push(self, value: Any) -> None:
         self.stack.insert(0, value)
 
