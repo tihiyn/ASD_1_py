@@ -1,9 +1,8 @@
 from typing import Any
-from typing import List
 
 class Queue:
-    def __init__(self) -> None:
-        self.storage: List[Any] = []
+    def __init__(self):
+        self.storage = []
 
     # O(N)
     def enqueue(self, item: Any) -> None:
